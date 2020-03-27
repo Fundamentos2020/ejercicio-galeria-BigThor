@@ -4,8 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galería</title>
+
+    <link rel="stylesheet" href="styles.css" type="text/css">
 </head>
 <body>
-    
+    <div class="container back-lightgray p-3 min-h-100">
+        <div class="row text-center">
+            <h1 class="pb-2 text-darkpurple">Galería de fotos</h1>
+            <form action="#" id="generar-galeria">
+                <label for="cantidad-fotos" class="text-purple mr-2">Fotos por página</label>
+                <input class="mr-2" type="number" id="cantidad-fotos" min="1" max="100" value="10">
+                <input id="boton-generar" class="" type="submit" value="Generar">
+            </form>
+        </div>
+        <div id="contenedor-galeria" class="text-center py-3"></div>
+
+        <div id="contenedor-botones-pagina" class="flex-container justify-center"></div>
+    </div>
+
+    <script src="app.js"></script>
 </body>
 </html>
