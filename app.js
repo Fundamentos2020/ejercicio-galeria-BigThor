@@ -6,7 +6,7 @@ var cantidadPaginas;
 function generarGaleria(e){
     e.preventDefault();
     cantidadFotos = document.getElementById('cantidad-fotos').value;
-    cantidadPaginas = Math.ceil(100 / cantidadFotos);
+    cantidadPaginas = Math.floor(100 / cantidadFotos);
 
     let htmlBotones = '<a class="boton-anterior" href="#">Ant</a>';
     for (let index = 0; index < cantidadPaginas; index++) {
